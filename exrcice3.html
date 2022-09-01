@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			  <title>Exercise Three</title>
+			  <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			  
+			  <style>
+				  body {
+						margin: 5%;
+						padding: 5%;
+					  }
+				  
+				ul.topnav {
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 10px;
+				  overflow: hidden;
+				  background-color: #56baed;
+				}
+
+				ul.topnav li {
+				  float: left;
+				}
+
+				ul.topnav li a {
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				}
+
+				ul.topnav li a:hover:not(.icon) {
+				  background-color: #39ace7;
+				}
+
+				ul.topnav li.right {
+				  float: right;
+				}
+
+				ul.topnav li.middle {
+				  text-align: right;
+				  font-size: 19px;
+				  font-family: 'Times New Roman', Times, serif;
+				}
+
+				ul.topnav li.middle a:hover {
+				  background-color: rgba(255, 255, 255, 0);
+				}
+
+
+				@media screen and (max-width: 900px) {
+				  ul.topnav li.right, 
+				  ul.topnav li {float: none;}
+				}
+				  
+				  form {
+					  border: 3px solid #f1f1f1;
+					}
+
+					input[type=text], input[type=password] {
+					width: 100%;
+					padding: 12px 20px;
+					margin: 8px 0;
+					display: inline-block;
+					border: 1px solid #ccc;
+					box-sizing: border-box;
+					}
+
+					input[type=submit] {
+					  background-color: #56baed;
+					  color: white;
+					  padding: 14px 20px;
+					  margin: 8px 0;
+					  border: none;
+					  cursor: pointer;
+					  width: 100%;
+					}
+
+					input[type=submit]:hover {
+					  background-color: #39ace7;
+					}
+
+					.mailEtPass {
+					padding: 16px;
+					}
+
+					h2 {
+					  text-align: center;
+					}
+				
+			 </style>
+			  
+			  
+			  
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              <script src ="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+		<ul class="topnav">
+            <li class="left"><a href="#Home" >Home</a></li>
+            <li class="right"><a href="https://github.com/"  target="_blank">Github</a></li>
+            <li class="right"><a href="https://www.youtube.com/"  target="_blank">Youtube</a></li>
+            <li class="right"><a href="https://www.linkedin.com/"  target="_blank">Linkedin</a></li>
+        </ul>
+        <br><br>
+		
+<h2>Sign in NOW!</h2>
+<br><br>
+      <form method="post">
+        <div class="mailEtPass">
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" placeholder="Enter your email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="psw" placeholder="Enter your password" name="psw" required>
+      
+          <input id="unsub" type="submit" value="Connexion" name="submit" onclick="return alertFunction();">
+        </div>
+      </form>
+	  
+		<script>
+			function alertFunction() {
+				var email = document.getElementById("email").value;
+				var password = document.getElementById("psw").value;
+				
+				alert("Email  " + email +"\nPassword  "+password);
+				
+				console.log("Email  " + email +" and Password  "+password);
+			}
+		</script>
+
+</body>
+</html>
