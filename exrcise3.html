@@ -120,7 +120,7 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" id="psw" placeholder="Enter your password" name="psw" required>
       
-          <input id="unsub" type="submit" value="Connexion" name="submit" onclick="return alertFunction();">
+          <input id="unsub" type="submit" value="connect" name="submit" onclick="return alertFunction();">
         </div>
       </form>
 	  
@@ -129,9 +129,9 @@
 				var email = document.getElementById("email").value;
 				var password = document.getElementById("psw").value;
 				
-				alert("Email  " + email +"\nPassword  "+password);
-				
 				console.log("Email  " + email +" and Password  "+password);
+				
+				alert("Email  " + email +"\nPassword  "+password);
 			}
 		</script>
 
